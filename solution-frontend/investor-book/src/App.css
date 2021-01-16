@@ -1,0 +1,88 @@
+.container {
+  width: 99vw;
+  height: 99vh;
+  min-width: 800px;
+  overflow-y: scroll;
+}
+
+.rowContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 150px;
+  margin-top: 0;
+}
+
+.cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  background-color: #e6f7ff;
+}
+
+.cell:last-child {
+  border-right-width: 1px;
+}
+
+.cellInput {
+  height: 90%;
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+}
+
+.rowNumber {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  background: #b3e6ff;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.columnName {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  resize: horizontal;
+  overflow: hidden;
+  min-width: 50px;
+  width: calc(100% / 6);
+  background: #b3e6ff;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.columnName:last-child {
+  border-right-width: 1px;
+}
+
+.columnNames {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  z-index: 2;
+  width: calc(100% - 50px);
+  height: 50px;
+}
